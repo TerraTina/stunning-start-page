@@ -75,7 +75,7 @@ main p strong {
 
 main p {
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #afafaf;
 }
@@ -91,7 +91,7 @@ section ul {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   padding: 0;
   list-style: none;
 }
@@ -113,6 +113,10 @@ section li h3 {
   text-align: center;
   z-index: 1;
   background-color: rgba(0,0,0,.1);
+  font: 1.25rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: -4rem 0 .5em;
+  padding: 1rem 0;
 }
 
 section li img {
@@ -127,16 +131,37 @@ section li div {
   align-items: center;
   justify-self: end;
   background-color: rgba(0,0,0,.1);
-  padding: .5em;
+  margin-top: .5em;
+  padding: 0;
   border-radius: 1em 0 0 1em;
 }
 
 section li div strong {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: normal;
   font-style: italic;
+  margin-right: .5em;
 }
 
 li div img {
   width: 1rem;
+  margin: .5em;
+}
+
+footer {
+  display: flex;
+  align-items: stretch;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: 2px solid #afafaf;
+}
+
+footer p, footer a {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+footer a {
+  color: #000;
 }
